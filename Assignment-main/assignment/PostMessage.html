@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Please give the review</title>
+ <style>
+        input,select{
+        background-color:blanchedalmond;
+        border-radius: 10px;
+        width:200px;
+        color: lightyellow;
+    }
+    form{
+        background-color:paleturquoise;
+
+    }
+ </style>
+</head>
+<body>
+    <h1>Forms in Html</h1>
+    <hr>
+    <div>
+    <h2>Review form</h2>
+    <form>
+        <p>Enter the name:<input type="text" placeholder="Name please"></p>
+        <p>Enter email id:<input type="text" placeholder="email id "></p>
+        <p>Video upload date:<input type="date"></p>
+        <p>gender: 
+            <input type="radio" name="gender"/>male
+            <input type="radio" name="gender"/>female
+            <input type="radio" name="gender"/>other
+        </p>
+        <p>Rate our site:<input type="range" min="1" max="10" step="1"></p>
+        <p>
+        <datalist id="lstcities">
+            <option>USA</option>
+            <option>UK</option>
+            <option>INDIA</option>
+            <option>RUSSIA</option>
+        </datalist>
+        <input list="lstcities" placeholder="Please provide the location"/>
+    </p>
+    <p>Scope of improvement :<input type="text" placeholder="Comment please "></p>
+    </form>
+    </div>  
+</body>
+</html>
